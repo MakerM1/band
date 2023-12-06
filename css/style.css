@@ -1,0 +1,388 @@
+.main-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(1, 1, 1);
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all 0.15s;
+}
+
+.main-nav ul li:hover {
+    border: 1px solid white;
+    background-color: rgb(28, 28, 28);
+}
+
+.main-nav ul li i {
+    transform: translate(0, -25%);
+}
+
+.right-side i {
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.right-side i:hover {
+    color: rgb(227, 227, 227);
+}
+
+main {
+    margin-top: 35px;
+    width: 100%;
+}
+
+main .s1 {
+    padding: 20px;
+}
+
+main .s1 .img-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+main .s1 .img-container img {
+    max-width: 1000px;
+    width: 100%;
+}
+
+main .s1 .img-container .img-text {
+    position: absolute;
+    color: white;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+main .s1 .img-container .img-text span {
+    font-size: 10px;
+}
+
+.s2 {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.s2-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.s2-container h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.s2-container h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.s2-container p {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.s2-container2 {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-box .card {
+    position: relative;
+}
+
+.card-box .card img {
+    border-radius: 10px;
+}
+
+.card-box .card .text3 {
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-box .card .text3 p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-weight: 600;
+    color: black;
+}
+
+.s3 {
+    margin-bottom: 50px;
+}
+
+.s3 .s3-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(1, 1, 1);
+    color: white;
+    text-align: center;
+    height: auto;
+    padding: 30px;
+}
+
+.s3 .s3-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.s3 .s3-container h5 {
+    font-size: 13px;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.s3-container .months {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.s3-container .months .month {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.s3-container .months .month div {
+    display: flex;
+    align-items: center;
+}
+
+.s3-container .months .month p {
+    color: gray;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.s3-container .sold-out-sign {
+    background-color: rgb(243, 67, 54);
+    padding: 5px 10px;
+}
+
+.s3-container .amount-available {
+    background-color: rgb(1, 1, 1);
+    padding: 6px 9px;
+    border-radius: 50%;
+}
+
+.s3-container .places-cards {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.s3-container .places-cards .place-card {
+    max-width: 250px;
+    width: 100%;
+    min-height: 300px;
+    background-color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.s3-container .places-cards .place-card img {
+    max-width: 300px;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.s3-container .places-cards .place-card .bottom-part {
+    padding: 10px;
+}
+
+.s3-container .places-cards .place-card .place-name {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.s3-container .places-cards .place-card .date {
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    margin-block-end: 20px;
+}
+
+.s3-container .places-cards .place-card .description {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.s3-container .places-cards .place-card .ticket-button {
+    background-color: rgb(1, 1, 1);
+    padding: 10px 15px;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.s4 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.s4 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.s4 h5 {
+    font-size: 15px;
+    font-style: italic;
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-container .leftside {
+    text-align: left;
+}
+
+.contact-container .leftside .location p {
+    display: inline-block;
+}
+
+.contact-container .leftside .contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-container .leftside .contact-info i {
+    margin-right: 10px;
+}
+
+.contact-container .leftside .contact-info a {
+    color: rgb(42, 42, 42);
+}
+
+.contact-container .leftside .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-container .right-side form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-container .right-side input {
+    padding: 10px 15px;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+.contact-container .right-side .message {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-container .right-side .send {
+    padding: 10px 15px;
+    border-radius: 0;
+    border: 2px solid transparent;
+    background-color: rgb(1, 1, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.s5 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 30px;
+}
+
+footer i {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: gray;
+}
+
+footer p span {
+    text-decoration: underline;
+}
