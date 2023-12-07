@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
 
 .main-header {
@@ -14,6 +15,64 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    min-height: 57.6px;
+}
+
+.phone-menu {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(1, 1, 1);
+    position: absolute;
+    bottom: 220px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: -1;
+    display: flex;
+}
+
+.phone-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -100;
+}
+
+.main-header.active .phone-menu {
+    opacity: 1;
+    visibility: visible;
+    bottom: -220px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger-menu .line:nth-child(3) {
+    margin-bottom: 0px;
 }
 
 .main-header a {
@@ -28,6 +87,16 @@ html {
     padding: 10px;
     border: 1px solid transparent;
     transition: all 0.15s;
+}
+
+@media (max-width: 490px) {
+    .normal-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
 }
 
 .main-nav ul li:hover {
@@ -312,6 +381,16 @@ main .s1 .img-container .img-text span {
     flex-wrap: wrap;
 }
 
+@media (max-width: 626px) {
+    .contact-container {
+        justify-content: space-around;
+    }
+
+    .contact-container .leftside {
+        margin-bottom: 20px;
+    }
+}
+
 .contact-container .leftside {
     text-align: left;
 }
@@ -381,7 +460,7 @@ footer {
 }
 
 footer i {
-    font-size: 30px;
+    font-size: 1rem;
     color: gray;
     cursor: pointer;
     margin-bottom: 20px;
@@ -393,4 +472,24 @@ footer p {
 
 footer p span {
     text-decoration: underline;
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.588);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
